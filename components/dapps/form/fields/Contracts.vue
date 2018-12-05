@@ -3,6 +3,29 @@
     <div v-if="isEdit">
       <ul class="list">
         <li 
+          v-if="cmtIsMissing" 
+          class="item">
+          <div class="name">CMT Mainnet Contracts</div>
+          <div 
+            :class="cmtMainnetErrors && cmtMainnetErrors.length > 0 ? '--has-errors' : ''" 
+            class="input-wrapper">
+            <textarea 
+              v-model="cmtMainnet" 
+              class="input" 
+              placeholder="Enter CMT addresses (one per line)" 
+              maxlength="11000" 
+              @input="validate('cmtMainnet')"/>
+            <ul 
+              v-if="cmtMainnetErrors && cmtMainnetErrors.length > 0" 
+              class="error-list -contracts">
+              <li 
+                v-for="(error, index) in cmtMainnetErrors" 
+                :key="index" 
+                class="error-item">{{ error }}</li>
+            </ul>
+          </div>
+        </li>
+        <li 
           v-if="ethIsMissing" 
           class="item">
           <div class="name">Ethereum Mainnet Contracts</div>
@@ -75,6 +98,52 @@
     </div>
     <div v-if="!isEdit">
       <p class="heading">{{ platform }} contract <span v-if="platform === 'EOS'">accounts</span><span v-else>addresses</span></p>
+      <ul 
+        v-if="platform === 'CMT'" 
+        class="list">
+        <li class="item">
+          <div class="name">Mainnet</div>
+          <div 
+            :class="cmtMainnetErrors && cmtMainnetErrors.length > 0 ? '--has-errors' : ''" 
+            class="input-wrapper">
+            <textarea 
+              v-model="cmtMainnet" 
+              class="input" 
+              placeholder="Enter CMT addresses (one per line)" 
+              maxlength="11000" 
+              @input="validate('cmtMainnet')"/>
+            <ul 
+              v-if="cmtMainnetErrors && cmtMainnetErrors.length > 0" 
+              class="error-list -contracts">
+              <li 
+                v-for="(error, index) in cmtMainnetErrors" 
+                :key="index" 
+                class="error-item">{{ error }}</li>
+            </ul>
+          </div>
+        </li>
+        <li class="item">
+          <div class="name">Testnet</div>
+          <div 
+            :class="cmtTestnetErrors && cmtTestnetErrors.length > 0 ? '--has-errors' : ''" 
+            class="input-wrapper">
+            <textarea 
+              v-model="cmtTestnet" 
+              class="input" 
+              placeholder="Enter CMT addresses (one per line)" 
+              maxlength="11000" 
+              @input="validate('cmtTestnet')"/>
+            <ul 
+              v-if="cmtTestnetErrors && cmtTestnetErrors.length > 0" 
+              class="error-list -contracts">
+              <li 
+                v-for="(error, index) in cmtTestnetErrors" 
+                :key="index" 
+                class="error-item">{{ error }}</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
       <ul 
         v-if="platform === 'Ethereum'" 
         class="list">
@@ -258,6 +327,10 @@ export default {
       type: Boolean,
       default: false
     },
+    cmtIsMissing: {
+      type: Boolean,
+      default: false
+    },
     eosIsMissing: {
       type: Boolean,
       default: false
@@ -359,6 +432,36 @@ export default {
     },
     poaTestnetErrors() {
       return this.$store.getters['dapps/form/poaTestnetErrors']
+    },
+    cmtMainnet: {
+      get() {
+        return this.$store.getters['dapps/form/contracts'].cmtMainnet.address
+      },
+      set(value) {
+        const field = {
+          name: 'cmtMainnet',
+          value: value
+        }
+        this.$store.dispatch('dapps/form/setContract', field)
+      }
+    },
+    cmtMainnetErrors() {
+      return this.$store.getters['dapps/form/cmtMainnetErrors']
+    },
+    cmtTestnet: {
+      get() {
+        return this.$store.getters['dapps/form/contracts'].cmtTestnet.address
+      },
+      set(value) {
+        const field = {
+          name: 'cmtTestnet',
+          value: value
+        }
+        this.$store.dispatch('dapps/form/setContract', field)
+      }
+    },
+    cmtTestnetErrors() {
+      return this.$store.getters['dapps/form/cmtTestnetErrors']
     },
     eosMainnet: {
       get() {

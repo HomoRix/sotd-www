@@ -128,7 +128,7 @@ export default {
               $email: this.suggesterEmail,
               $name: this.suggesterName,
               hasWeb3: typeof web3 !== 'undefined',
-              lastUpdated: new Date().toISOString(),
+              modifyDate: new Date().toISOString(),
               lastSessionEntryRoute: this.userEntryRoute
             })
           })

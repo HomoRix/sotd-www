@@ -14,7 +14,7 @@
       </div>
       <div class="module-wrapper -tier-2">
         <div class="module">
-          <DappDetailBodyContentModulesSubmitted :submitted="dapp.created"/>
+          <DappDetailBodyContentModulesSubmitted :submitted="dapp.createDate"/>
         </div>
         <div class="module">
           <DappDetailBodyContentModulesUpdated :updated="dapp.lastUpdated"/>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div 
-        v-if="dapp.audits.length || dapp.contractsMainnet.length || dapp.contractsKovan.length || dapp.contractsRinkeby.length || dapp.contractsRopsten.length || dapp.contractsPoaMainnet.length || dapp.contractsPoaTestnet.length || dapp.contractsEosMainnet.length"
+        v-if="dapp.audits.length || dapp.contractsMainnet.length || dapp.contractsKovan.length || dapp.contractsRinkeby.length || dapp.contractsRopsten.length || dapp.contractsPoaMainnet.length || dapp.contractsPoaTestnet.length || dapp.contractsEosMainnet.length || dapp.contractsCmtMainnet.length || dapp.contractsCmtTestnet.length"
         class="module-wrapper -tier-5">
         <div
           :class="dapp.audits.length ? 'has-audits' : ''"
@@ -104,6 +104,8 @@
             :poa-mainnet="dapp.contractsPoaMainnet"
             :poa-testnet="dapp.contractsPoaTestnet"
             :eos-mainnet="dapp.contractsEosMainnet"
+            :cmt-mainnet="dapp.contractsCmtMainnet"
+            :cmt-testnet="dapp.contractsCmtTestnet"
             :slug="dapp.slug"/>
         </div>
         <div 

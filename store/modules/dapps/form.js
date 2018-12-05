@@ -28,6 +28,8 @@ function initialState() {
       name: [],
       poaMainnet: [],
       poaTestnet: [],
+      cmtMainnet: [],
+      cmtTestnet: [],
       eosMainnet: [],
       productImage: [],
       rinkeby: [],
@@ -47,6 +49,8 @@ function initialState() {
         mainnet: { address: '' },
         poaMainnet: { address: '' },
         poaTestnet: { address: '' },
+        cmtMainnet: { address: '' },
+        cmtTestnet: { address: '' },
         eosMainnet: { address: '' },
         ropsten: { address: '' },
         kovan: { address: '' },
@@ -298,8 +302,28 @@ const getters = {
     let contracts = contractsString.split('\n')
     return contracts
   },
+  contractsCmtMainnet: state => {
+    let contractsString = state.fields.contracts.cmtMainnet.address
+    let contracts = contractsString.split('\n')
+    return contracts
+  },
+  contractsCmtTestnet: state => {
+    let contractsString = state.fields.contracts.cmtTestnet.address
+    let contracts = contractsString.split('\n')
+    return contracts
+  },
   contractsEosMainnet: state => {
     let contractsString = state.fields.contracts.eosMainnet.address
+    let contracts = contractsString.split('\n')
+    return contracts
+  },
+  contractsCmtMainnet: state => {
+    let contractsString = state.fields.contracts.cmtMainnet.address
+    let contracts = contractsString.split('\n')
+    return contracts
+  },
+  contractsCmtTestnet: state => {
+    let contractsString = state.fields.contracts.cmtTestnet.address
     let contracts = contractsString.split('\n')
     return contracts
   },
@@ -377,6 +401,12 @@ const getters = {
   },
   poaTestnetErrors: state => {
     return state.errors.poaTestnet
+  },
+  cmtMainnetErrors: state => {
+    return state.errors.cmtMainnet
+  },
+  cmtTestnetErrors: state => {
+    return state.errors.cmtTestnet
   },
   eosMainnetErrors: state => {
     return state.errors.eosMainnet

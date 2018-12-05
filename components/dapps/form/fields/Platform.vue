@@ -3,6 +3,11 @@
     <p class="heading">Platform</p>
     <div class="selection-wrapper">
       <button
+        :class="platform === 'CMT' ? 'is-active' : ''"
+        class="selection"
+        @click="setPlatform('CMT')">CMT</button>
+        <!--
+      <button
         :class="platform === 'Ethereum' ? 'is-active' : ''"
         class="selection"
         @click="setPlatform('Ethereum')">Ethereum</button>
@@ -14,6 +19,7 @@
         :class="platform === 'POA' ? 'is-active' : ''"
         class="selection"
         @click="setPlatform('POA')">POA</button>
+        -->
     </div>
   </div>
 </template>

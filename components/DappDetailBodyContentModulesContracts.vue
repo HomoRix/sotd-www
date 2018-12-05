@@ -38,11 +38,35 @@
         platform="POA"
         network="Sokol Testnet"/>
       <DappDetailBodyContentModulesContractsItem
+        v-if="cmtMainnet.length"
+        :addresses="cmtMainnet"
+        :slug="slug"
+        platform="CMT"
+        network="mainnet"/>
+      <DappDetailBodyContentModulesContractsItem
+        v-if="cmtTestnet.length"
+        :addresses="cmtTestnet"
+        :slug="slug"
+        platform="CMT"
+        network="Testnet"/>
+      <DappDetailBodyContentModulesContractsItem
         v-if="eosMainnet.length"
         :addresses="eosMainnet"
         :slug="slug"
         platform="EOS"
         network="mainnet"/>
+      <DappDetailBodyContentModulesContractsItem
+        v-if="cmtMainnet.length"
+        :addresses="cmtMainnet"
+        :slug="slug"
+        platform="CMT"
+        network="mainnet"/>
+      <DappDetailBodyContentModulesContractsItem
+        v-if="cmtTestnet.length"
+        :addresses="cmtTestnet"
+        :slug="slug"
+        platform="CMT"
+        network="Testnet"/>
     </ul>
   </div>
 </template>
@@ -76,6 +100,14 @@ export default {
       required: true
     },
     poaTestnet: {
+      type: Array,
+      required: true
+    },
+    cmtMainnet: {
+      type: Array,
+      required: true
+    },
+    cmtTestnet: {
       type: Array,
       required: true
     },

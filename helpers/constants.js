@@ -33,11 +33,13 @@ const dappSchema = Object.freeze({
   contractsPoaMainnet: [],
   contractsPoaTestnet: [],
   contractsEosMainnet: [],
-  created: '',
+  contractsCmtMainnet: [],
+  contractsCmtTestnet: [],
+  createDate: '',
   description: '',
   isNew: false,
   isNsfw: false,
-  lastUpdated: '',
+  modifyDate: '',
   license: '',
   logoUrl: '',
   name: '',
@@ -180,7 +182,7 @@ const daysOfTheWeek = Object.freeze([
   'Sat'
 ])
 
-const dappDefaultPlatform = 'Ethereum'
+const dappDefaultPlatform = 'CMT'
 
 const eventCategories = Object.freeze([
   'conference',
@@ -204,15 +206,20 @@ const feedbackComponentMap = Object.freeze({
 
 const myListLimit = 50
 
-const platformList = ['Ethereum', 'EOS', 'POA']
+const platformList = ['CMT', 'Ethereum', 'EOS', 'POA']
 
 const platformMap = {
+  cmt: 'CMT',
   ethereum: 'Ethereum',
   eos: 'EOS',
   poa: 'POA'
 }
 
 const platformSoftware = {
+  CMT: {
+    name: 'Metamask4CMT',
+    url: 'https://metamask.io/?utm_source=StateOfTheDApps'
+  },
   Ethereum: {
     name: 'Metamask',
     url: 'https://metamask.io/?utm_source=StateOfTheDApps'

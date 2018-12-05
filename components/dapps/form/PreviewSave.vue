@@ -115,6 +115,12 @@ export default {
     contractsEosMainnet() {
       return this.$store.getters['dapps/form/contractsEosMainnet']
     },
+    contractsCmtMainnet() {
+      return this.$store.getters['dapps/form/contractsCmtMainnet']
+    },
+    contractsCmtTestnet() {
+      return this.$store.getters['dapps/form/contractsCmtTestnet']
+    },
     errorFields() {
       return this.$store.getters['dapps/form/errorFields']
     },
@@ -183,6 +189,8 @@ export default {
         data.fields.contractsPoaMainnet = this.contractsPoaMainnet
         data.fields.contractsPoaTestnet = this.contractsPoaTestnet
         data.fields.contractsEosMainnet = this.contractsEosMainnet
+        data.fields.contractsCmtMainnet = this.contractsCmtMainnet
+        data.fields.contractsCmtTestnet = this.contractsCmtTestnet
         this.sending = true
         axios
           .post('dapps', data)

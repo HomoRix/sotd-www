@@ -1,8 +1,8 @@
-export const setUser = function($email, hasWeb3, lastUpdated, userEntryRoute) {
+export const setUser = function($email, hasWeb3, modifyDate, userEntryRoute) {
   let user = {
     $email,
     hasWeb3,
-    lastUpdated,
+    modifyDate,
     userEntryRoute
   }
 
