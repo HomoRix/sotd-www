@@ -17,7 +17,7 @@
           <DappDetailBodyContentModulesSubmitted :submitted="dapp.createDate"/>
         </div>
         <div class="module">
-          <DappDetailBodyContentModulesUpdated :updated="dapp.lastUpdated"/>
+          <DappDetailBodyContentModulesUpdated :updated="dapp.modifyDate"/>
         </div>
       </div>
       <div 

@@ -103,11 +103,11 @@ export default {
       this.$mixpanel.track(action.name, action.data)
 
       const hasWeb3 = typeof web3 !== 'undefined'
-      const lastUpdated = new Date().toISOString()
+      const modifyDate = new Date().toISOString()
       const user = setUser(
         this.email,
         hasWeb3,
-        lastUpdated,
+        modifyDate,
         this.userEntryRoute
       )
       this.$mixpanel.setUser(user)

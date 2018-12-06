@@ -200,7 +200,7 @@ export default {
               $email: this.fields.email,
               $name: this.fields.authors,
               hasWeb3: typeof web3 !== 'undefined',
-              lastUpdated: new Date().toISOString(),
+              modifyDate: new Date().toISOString(),
               lastDappSubmitted: this.fields.name,
               lastSessionEntryRoute: this.userEntryRoute
             })
