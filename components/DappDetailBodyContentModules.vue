@@ -14,10 +14,10 @@
       </div>
       <div class="module-wrapper -tier-2">
         <div class="module">
-          <DappDetailBodyContentModulesSubmitted :submitted="dapp.createDate"/>
+          <DappDetailBodyContentModulesSubmitted :submitted="dapp.created || dapp.createDate"/>
         </div>
         <div class="module">
-          <DappDetailBodyContentModulesUpdated :updated="dapp.modifyDate"/>
+          <DappDetailBodyContentModulesUpdated :updated="dapp.lastUpdated || dapp.modifyDate"/>
         </div>
       </div>
       <div 

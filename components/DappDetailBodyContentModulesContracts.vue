@@ -38,13 +38,13 @@
         platform="POA"
         network="Sokol Testnet"/>
       <DappDetailBodyContentModulesContractsItem
-        v-if="cmtMainnet.length"
+        v-if="cmtMainnet && cmtMainnet.length"
         :addresses="cmtMainnet"
         :slug="slug"
         platform="CMT"
         network="mainnet"/>
       <DappDetailBodyContentModulesContractsItem
-        v-if="cmtTestnet.length"
+        v-if="cmtTestnet && cmtTestnet.length"
         :addresses="cmtTestnet"
         :slug="slug"
         platform="CMT"
@@ -56,13 +56,13 @@
         platform="EOS"
         network="mainnet"/>
       <DappDetailBodyContentModulesContractsItem
-        v-if="cmtMainnet.length"
+        v-if="cmtMainnet && cmtMainnet.length"
         :addresses="cmtMainnet"
         :slug="slug"
         platform="CMT"
         network="mainnet"/>
       <DappDetailBodyContentModulesContractsItem
-        v-if="cmtTestnet.length"
+        v-if="cmtTestnet && cmtTestnet.length"
         :addresses="cmtTestnet"
         :slug="slug"
         platform="CMT"
