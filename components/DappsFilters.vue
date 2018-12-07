@@ -1,6 +1,6 @@
 <template>
   <div class="component-dapps-filters">
-    <div class="filter">
+    <!-- <div class="filter">
       <BaseDropdown
         :options="platformOptions"
         :selected="formattedPlatformQuery"
@@ -8,7 +8,7 @@
         name="Platform"
         title="Choose a platform"
         @select="selectPlatform"/>
-    </div>
+    </div> -->
     <div class="filter">
       <BaseDropdown
         :options="categoryOptions"

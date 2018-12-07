@@ -11,13 +11,13 @@
         name="Category"
         title="Choose a category"
         @select="filterCategory"/>
-      <BaseDropdown
+      <!-- <BaseDropdown
         :options="platformOptions"
         :selected="platform"
         all-text="All platforms"
         name="Platform"
         title="Choose a platform"
-        @select="filterPlatform"/>
+        @select="filterPlatform"/> -->
     </div> 
     <div class="wrapper">
       <div class="wrapper-2">

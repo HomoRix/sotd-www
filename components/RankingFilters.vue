@@ -10,7 +10,7 @@
         title="Choose a category"
         @select="filterCategory"/>
     </div>
-    <div class="filter-wrapper">
+    <!-- <div class="filter-wrapper">
       <BaseDropdown
         :options="platformOptions"
         :selected="platform"
@@ -18,7 +18,7 @@
         name="Platform"
         title="Choose a platform"
         @select="filterPlatform"/>
-    </div>
+    </div> -->
   </div>
 </template>
 
