@@ -104,12 +104,7 @@ export default {
 
       const hasWeb3 = typeof web3 !== 'undefined'
       const modifyDate = new Date().toISOString()
-      const user = setUser(
-        this.email,
-        hasWeb3,
-        modifyDate,
-        this.userEntryRoute
-      )
+      const user = setUser(this.email, hasWeb3, modifyDate, this.userEntryRoute)
       this.$mixpanel.setUser(user)
     }
   }
