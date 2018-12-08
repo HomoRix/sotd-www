@@ -3,7 +3,7 @@
     <div class="page-home">
       <HomeHero/>
       <DappFeaturedList/>
-      <DappFeaturedPlatforms/>
+      <!-- <DappFeaturedPlatforms/> -->
       <DappFeaturedCategories/>
       <DappFeaturedRankings/>
       <HomeFeaturedCollections/>
@@ -15,7 +15,7 @@
 import { mapGetters } from 'vuex'
 import DappFeaturedList from '~/components/DappFeaturedList'
 import DappFeaturedCategories from '~/components/DappFeaturedCategories'
-import DappFeaturedPlatforms from '~/components/DappFeaturedPlatforms'
+// import DappFeaturedPlatforms from '~/components/DappFeaturedPlatforms'
 import DappFeaturedRankings from '~/components/DappFeaturedRankings'
 import HomeFeaturedCollections from '~/components/HomeFeaturedCollections'
 import HomeHero from '~/components/HomeHero'
@@ -26,7 +26,7 @@ export default {
     HomeFeaturedCollections,
     DappFeaturedList,
     DappFeaturedCategories,
-    DappFeaturedPlatforms,
+    // DappFeaturedPlatforms,
     DappFeaturedRankings,
     HomeHero,
     LayoutHome
