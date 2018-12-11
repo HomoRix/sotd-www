@@ -41,7 +41,7 @@
 <script>
 import Dropzone from 'nuxt-dropzone'
 import 'nuxt-dropzone/dropzone.css'
-import { Icon, Upload, Modal, Checkbox, Button, Progress } from 'iview'
+// import { Icon, Upload, Modal, Checkbox, Button, Progress } from 'iview'
 
 export default {
   components: {
