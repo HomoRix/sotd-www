@@ -21,10 +21,10 @@ export default {
     BaseFileUpload
   },
   methods: {
-    setProductImage(url) {
+    setProductImage(response) {
       const field = {
         name: 'productImage',
-        value: url
+        value: response.url || ''
       }
       this.$store.dispatch('dapps/form/setField', field)
     }

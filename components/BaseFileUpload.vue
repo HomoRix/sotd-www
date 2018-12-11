@@ -1,6 +1,6 @@
 <template>
   <div class="component-base-file-upload">
-    <dropzone
+    <!-- <dropzone
       id="dropzone"
       ref="el"
       :awss3="awss3"
@@ -9,7 +9,28 @@
       :duplicate-check="true"
       @vdropzone-queue-complete="disable"
       @vdropzone-s3-upload-error="s3UploadError"
-      @vdropzone-s3-upload-success="s3UploadSuccess"/>
+      @vdropzone-s3-upload-success="s3UploadSuccess"/> -->
+    <dropzone
+      id="dropzone"
+      ref="el"
+      :options="options"
+      :destroy-dropzone="true"
+      :duplicate-check="true"
+      @vdropzone-error="uploadError"
+      @vdropzone-success="uploadSuccess"/>
+    <!-- <Upload
+      multiple
+      type="drag"
+      paste
+      action="//jsonplaceholder.typicode.com/posts/">
+      <div style="padding: 20px 0">
+        <Icon
+          type="ios-cloud-upload"
+          size="52"
+          style="color: #3399ff"/>
+        <p>Click or drag files here to upload</p>
+      </div>
+    </Upload> -->
     <div
       v-if="disabled"
       class="disable"
@@ -20,10 +41,13 @@
 <script>
 import Dropzone from 'nuxt-dropzone'
 import 'nuxt-dropzone/dropzone.css'
+import { Icon, Upload, Modal, Checkbox, Button, Progress } from 'iview'
 
 export default {
   components: {
-    Dropzone
+    Dropzone,
+    Icon,
+    Upload
   },
   props: {
     message: {
@@ -38,14 +62,15 @@ export default {
   data() {
     return {
       disabled: false,
-      awss3: {
-        signingURL: process.env.apiUrl + 'images/sign_s3',
-        headers: {},
-        params: {},
-        sendFileToServer: false,
-        withCredentials: false
-      },
+      // awss3: {
+      //   signingURL: process.env.apiUrl + 'images/sign_s3',
+      //   headers: {},
+      //   params: {},
+      //   sendFileToServer: false,
+      //   withCredentials: false
+      // },
       options: {
+        url: 'http://localhost:8080/dapp-store/api/dappStore/upload', // 'http://httpbin.org/anything', // 'http://localhost:8080/dapp-store/api/dappStore/upload',
         autoProcessQueue: true,
         dictDefaultMessage: this.message,
         resizeWidth: this.resizeWidth,
@@ -69,12 +94,20 @@ export default {
       this.$refs.el.dropzone.enable()
       this.disabled = false
     },
-    s3UploadError(errorMessage) {
+    uploadError(errorMessage) {
       console.log(errorMessage)
     },
-    s3UploadSuccess(s3ObjectLocation) {
-      this.$emit('uploadSuccess', s3ObjectLocation)
+    uploadSuccess(file, response) {
+      console.log('file:' + JSON.stringify(file))
+      console.log('response:' + JSON.stringify(response))
+      this.$emit('uploadSuccess', response)
     }
+    // s3UploadError(errorMessage) {
+    //   console.log(errorMessage)
+    // },
+    // s3UploadSuccess(s3ObjectLocation) {
+    //   this.$emit('uploadSuccess', s3ObjectLocation)
+    // }
   }
 }
 </script>
