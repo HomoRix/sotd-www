@@ -8,7 +8,7 @@
           :src="dapp.logoUrl" 
           class="logo-image">
       </div>
-      <div v-if="dapp.sites.websiteUrl && dapp.sites.websiteUrl === dapp.sites.dappUrl">
+      <div v-if="dapp.sites && dapp.sites.websiteUrl && dapp.sites.websiteUrl === dapp.sites.dappUrl">
         <a 
           :href="dapp.sites.websiteUrl + refString(dapp.sites.websiteUrl)" 
           :rel="'noopener noreferrer' + (dapp.nofollow ? ' nofollow' : '')" 
@@ -21,7 +21,7 @@
       </div>
       <div v-else>
         <a 
-          v-if="dapp.sites.dappUrl" 
+          v-if="dapp.sites && dapp.sites.dappUrl" 
           :href="dapp.sites.dappUrl + refString(dapp.sites.dappUrl)" 
           :rel="'noopener noreferrer' + (dapp.nofollow ? ' nofollow' : '')" 
           class="button" 
@@ -31,7 +31,7 @@
           <span v-else>Launch ÐApp<span v-if="dapp.isNsfw"> (NSFW)</span></span>
         </a>
         <a 
-          v-if="dapp.sites.websiteUrl" 
+          v-if="dapp.sites && dapp.sites.websiteUrl" 
           :href="dapp.sites.websiteUrl + refString(dapp.sites.websiteUrl)" 
           :rel="'noopener noreferrer' + (dapp.nofollow ? ' nofollow' : '')" 
           class="button" 
@@ -39,7 +39,7 @@
           @click="trackDappSite(['website'], dapp.sites.websiteUrl)">Visit website<span v-if="dapp.isNsfw"> (NSFW)</span></a>
       </div>
       <ul 
-        v-if="dapp.socials.length" 
+        v-if="dapp.socials && dapp.socials.length" 
         class="social-list">
         <li 
           v-for="(social, index) in dapp.socials" 

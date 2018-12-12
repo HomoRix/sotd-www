@@ -33,7 +33,8 @@
               :slug="dapp.slug"/>
           </div>
         </media>
-        <DappDetailBodyContentRecommend
+        <DappDetailBodyContentRecommend 
+          v-if="dapp.stats"
           :slug="dapp.slug"
           :rating="dapp.stats.star_rating || null"
           :votes="dapp.stats.votes"

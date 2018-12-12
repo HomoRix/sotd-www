@@ -141,7 +141,7 @@ export default {
     },
     volumePct() {
       let volumePct
-      let stats = this.dapp.stats
+      let stats = this.dapp.stats || {}
       let platform = this.dapp.platform
       if (platform === 'Ethereum') {
         volumePct = stats.value_7d_pct

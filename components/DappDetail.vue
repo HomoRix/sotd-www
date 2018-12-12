@@ -4,7 +4,7 @@
       :dapp="dapp" 
       :direct="direct"/>
     <DappDetailRelatedDapps 
-      v-if="dapp.relatedDapps.length" 
+      v-if="dapp.relatedDapps && dapp.relatedDapps.length" 
       :dapps="dapp.relatedDapps"/>
   </div>
 </template>

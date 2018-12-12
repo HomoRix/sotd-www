@@ -57,7 +57,7 @@
             v-for="(dapp, index) in dapps"
             class="table-row">
             <div
-              v-if="dapp.rank"
+              v-if="dapp"
               :key="index"
               class="table-row">
               <div class="table-data col-rank">
@@ -85,6 +85,7 @@
               <media :query="{minWidth: tweakpoint}">
                 <div class="table-data col-dau">
                   <RankingTableValuePct
+                    v-if="dapp.stats"
                     :value="dapp.stats.dau"
                     :value_pct="dapp.stats.dau_pct"/>
                 </div>
@@ -92,6 +93,7 @@
               <media :query="{minWidth: tweakpoint}">
                 <div class="table-data col-vol">
                   <RankingTableVolume
+                    v-if="dapp.stats"
                     :stats="dapp.stats"
                     :platform="dapp.platform"/>
                 </div>
@@ -99,13 +101,16 @@
               <media :query="{minWidth: tweakpoint}">
                 <div class="table-data col-dev">
                   <RankingTableValuePct
+                    v-if="dapp.stats"
                     :value="dapp.stats.dev_30d"
                     :value_pct="dapp.stats.dev_30d_pct"/> 
                 </div>
               </media>
               <media :query="{minWidth: tweakpoint}">
                 <div class="table-data col-usage">
-                  <RankingTableTrend :users="dapp.sparklines.users"/>
+                  <RankingTableTrend
+                    v-if="dapp.sparklines && dapp.sparklines.users" 
+                    :users="dapp.sparklines.users"/>
                 </div>
               </media>        
             </div>

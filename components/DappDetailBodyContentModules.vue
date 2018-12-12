@@ -21,7 +21,7 @@
         </div>
       </div>
       <div 
-        v-if="dapp.stats.dev_30d" 
+        v-if="dapp.stats && dapp.stats.dev_30d" 
         class="module-wrapper -tier-3">
         <div class="module">
           <DappDetailBodyContentModulesDev
@@ -153,7 +153,8 @@ export default {
   },
   computed: {
     stats() {
-      let dauExists = this.dapp.stats.dau !== undefined
+      let dauExists =
+        this.dapp.stats !== undefined && this.dapp.stats.dau !== undefined
       return dauExists
     }
   }

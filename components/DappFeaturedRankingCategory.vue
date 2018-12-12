@@ -33,7 +33,7 @@
         <span class="dapp-name"><nuxt-link 
           :to="{ name: 'dapp-detail', params: { slug: dapp.slug } }" 
           @click.native="trackDappView(dapp.slug)">{{ dapp.name }}</nuxt-link></span>
-        <span class="dapp-dau"><span v-if="dapp.stats.dau !== undefined">{{ dapp.stats.dau.toLocaleString() }}</span><span v-else>-</span></span>
+        <span class="dapp-dau"><span v-if="dapp.stats && dapp.stats.dau !== undefined">{{ dapp.stats.dau.toLocaleString() }}</span><span v-else>-</span></span>
       </li>
     </ul>
   </div>
@@ -77,6 +77,8 @@ export default {
       .then(response => {
         const dapps = response.data.items
         this.dapps = dapps
+
+        console.log('dapp:' + JSON.stringify(response))
       })
   },
   methods: {
