@@ -45,9 +45,9 @@ import 'nuxt-dropzone/dropzone.css'
 
 export default {
   components: {
-    Dropzone,
     // Upload,
-    Icon
+    // Icon,
+    Dropzone
   },
   props: {
     message: {
