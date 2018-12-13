@@ -643,6 +643,21 @@ export const trackMetamaskCta = function(sourceComponent, sourcePath) {
   return action
 }
 
+export const trackCMTMetamaskCta = function(sourceComponent, sourcePath) {
+  let name = 'CMT-Metamask CTA'
+  let data = {
+    sourceComponent,
+    sourcePath
+  }
+
+  const action = {
+    name,
+    data
+  }
+
+  return action
+}
+
 export const trackMyListView = function(dapps) {
   let name = 'My List - View'
   let data = {

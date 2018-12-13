@@ -1,20 +1,23 @@
 <template>
   <div class="component-SecondaryCta">
-    <SecondaryCtaMailingList/>
+    <!-- <SecondaryCtaMailingList/>
     <SecondaryCtaMetamask/>
-    <SecondaryCtaScatter/>
+    <SecondaryCtaScatter/> -->
+    <SecondaryCtaCMTMetamask/>
   </div>
 </template>
 
 <script>
 import SecondaryCtaMailingList from './SecondaryCtaMailingList'
 import SecondaryCtaMetamask from './SecondaryCtaMetamask'
+import SecondaryCtaCMTMetamask from './SecondaryCtaCMTMetamask'
 import SecondaryCtaScatter from './SecondaryCtaScatter'
 
 export default {
   components: {
     SecondaryCtaMailingList,
     SecondaryCtaMetamask,
+    SecondaryCtaCMTMetamask,
     SecondaryCtaScatter
   }
 }
