@@ -218,7 +218,7 @@ const platformMap = {
 const platformSoftware = {
   CMT: {
     name: 'Metamask4CMT',
-    url: 'https://metamask.io/?utm_source=StateOfTheDApps'
+    url: 'https://www.cybermiles.io/metamask/?ref=StateOfTheDApps'
   },
   Ethereum: {
     name: 'Metamask',
