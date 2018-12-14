@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs'
 
 const env = {
-  apiUrl: process.env.API_URL || 'https://prod.cmtdapps.com:8443/api/dappStore/' || 'https://api.stateofthedapps.com/',
+  apiUrl: process.env.API_URL || 'http://prod.cmtdapps.com:8080/api/dappStore/' || 'https://api.stateofthedapps.com/',
   cdnPublicPath: process.env.CDN_PUBLIC_PATH || '/_nuxt/',
   googleAnalytics: process.env.GOOGLE_ANALYTICS || 'UA-000000-1',
   fullstory: process.env.FULLSTORY,
@@ -22,12 +22,12 @@ const env = {
 export default {
   // 使用https的配置示例
   // https://zh.nuxtjs.org/api/configuration-server/#%E4%BD%BF%E7%94%A8-https-%E9%85%8D%E7%BD%AE%E7%9A%84%E7%A4%BA%E4%BE%8B
-  server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'cert.pem'))
-    }
-  },
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(__dirname, 'key.pem')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, 'cert.pem'))
+  //   }
+  // },
   build: {
     extend(config, ctx) {
       // Run ESLint on save
@@ -52,7 +52,8 @@ export default {
     ['@nuxtjs/google-analytics', { id: env.googleAnalytics }],
     '@nuxtjs/markdownit'
   ],
-  serverMiddleware: ['redirect-ssl'],
+  // TODO: By LvQS(不自动重定位)
+  // serverMiddleware: ['redirect-ssl'],
   css: [{ src: '~/assets/css/main.scss', lang: 'scss' }],
   env: {
     apiUrl: env.apiUrl,
