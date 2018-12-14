@@ -11,14 +11,14 @@
         <h5 class="title-5">Metamask for CMT</h5>
         <p class="description">Metamask lets you use CMT ÐApps within your browser. <a 
           class="link" 
-          href="http://www.cybermiles.io/metamask/?ref=StateOfTheDApps" 
+          href="https://www.cybermiles.io/metamask/?ref=StateOfTheDApps" 
           target="_blank" 
           rel="noopener noreferrer" 
           @click="trackCMTMetamaskCta()">Try it now</a></p>
       </div>
       <div class="cta-wrapper">
         <a 
-          href="http://www.cybermiles.io/metamask/?ref=StateOfTheDApps" 
+          href="https://www.cybermiles.io/metamask/?ref=StateOfTheDApps" 
           class="cta" 
           target="_blank" 
           rel="noopener noreferrer" 

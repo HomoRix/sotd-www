@@ -11,9 +11,9 @@
           v-for="(badge, index) in badges" 
           :key="index" 
           class="badge-wrapper">
-          <img :src="`http://badges.stateofthedapps.com/${dapp.slug}/${badge}`"><br>
-          <pre><code>&lt;a href=&quot;http://www.stateofthedapps.com/dapps/{{ dapp.slug }}&quot;&gt;
-          &lt;img src=&quot;http://badges.stateofthedapps.com/{{ dapp.slug }}/{{ badge }}&quot;&gt;
+          <img :src="`https://badges.stateofthedapps.com/${dapp.slug}/${badge}`"><br>
+          <pre><code>&lt;a href=&quot;https://www.stateofthedapps.com/dapps/{{ dapp.slug }}&quot;&gt;
+          &lt;img src=&quot;https://badges.stateofthedapps.com/{{ dapp.slug }}/{{ badge }}&quot;&gt;
           &lt;/a&gt;</code></pre>
         </div>
       </div>

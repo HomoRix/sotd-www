@@ -94,7 +94,7 @@ const dappBadgeMap = Object.freeze({
   consensys: {
     component: 'SvgBadgeConsensys',
     description:
-      'Part of <a href="http://new.consensys.net/" target="_blank">Consensys</a>'
+      'Part of <a href="https://new.consensys.net/" target="_blank">Consensys</a>'
   },
   featured: {
     component: 'SvgBadgeFeatured',
@@ -107,16 +107,16 @@ const dappBadgeMap = Object.freeze({
   metamask: {
     component: 'SvgBadgeMetamask',
     description:
-      'Works with <a href="http://www.metamask.io" target="_blank">Metamask</a>'
+      'Works with <a href="https://www.metamask.io" target="_blank">Metamask</a>'
   },
   solidified: {
     component: 'SvgBadgeSolidified',
     description:
-      'Audited by <a href="http://solidified.io/" target="_blank">Solidified</a>'
+      'Audited by <a href="https://solidified.io/" target="_blank">Solidified</a>'
   },
   'status-im': {
     component: 'SvgBadgeStatus',
-    description: 'On <a href="http://status.im/" target="_blank">Status.im</a>'
+    description: 'On <a href="https://status.im/" target="_blank">Status.im</a>'
   },
   token: {
     component: 'SvgBadgeToken',
@@ -218,20 +218,20 @@ const platformMap = {
 const platformSoftware = {
   CMT: {
     name: 'Metamask4CMT',
-    url: 'http://metamask.io/?utm_source=StateOfTheDApps'
+    url: 'https://metamask.io/?utm_source=StateOfTheDApps'
   },
   Ethereum: {
     name: 'Metamask',
-    url: 'http://metamask.io/?utm_source=StateOfTheDApps'
+    url: 'https://metamask.io/?utm_source=StateOfTheDApps'
   },
   EOS: {
     name: 'Scatter',
-    url: 'http://get-scatter.com/?utm_source=StateOfTheDApps'
+    url: 'https://get-scatter.com/?utm_source=StateOfTheDApps'
   },
   POA: {
     name: 'Nifty',
     url:
-      'http://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?utm_source=StateOfTheDApps'
+      'https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?utm_source=StateOfTheDApps'
   }
 }
 

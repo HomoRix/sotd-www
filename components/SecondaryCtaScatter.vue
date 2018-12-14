@@ -11,14 +11,14 @@
         <h5 class="title-5">Scatter for EOS</h5>
         <p class="description">Scatter lets your use EOS ÐApps within your browser. <a 
           class="link" 
-          href="http://get-scatter.com/?ref=StateOfTheDApps" 
+          href="https://get-scatter.com/?ref=StateOfTheDApps" 
           target="_blank" 
           rel="noopener noreferrer" 
           @click="trackScatterCta()">Try it now</a></p>
       </div>
       <div class="cta-wrapper">
         <a 
-          href="http://get-scatter.com/?ref=StateOfTheDApps" 
+          href="https://get-scatter.com/?ref=StateOfTheDApps" 
           class="cta" 
           target="_blank" 
           rel="noopener noreferrer" 

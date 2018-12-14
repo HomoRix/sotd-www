@@ -29,7 +29,7 @@
           <h2>Further Reading</h2>
           <ul>
             <li><a 
-              href="http://github.com/ethereum/wiki/wiki/White-Paper" 
+              href="https://github.com/ethereum/wiki/wiki/White-Paper" 
               target="_blank" 
               rel="noopener noreferrer">Ethereum Whitepaper</a></li>
             <li><a 
@@ -37,11 +37,11 @@
               target="_blank" 
               rel="noopener noreferrer">Ethereum Yellow paper for technical specifications</a></li>
             <li><a 
-              href="http://medium.com/technologymadeeasy/develop-dapps-on-ethereum-tutorial-series-for-beginners-part-1-basic-terminology-866d2ce4cf34" 
+              href="https://medium.com/technologymadeeasy/develop-dapps-on-ethereum-tutorial-series-for-beginners-part-1-basic-terminology-866d2ce4cf34" 
               target="_blank" 
               rel="noopener noreferrer">ÐApp terminology</a></li>
             <li><a 
-              href="http://dappdaily.com/ethereum-reading-list-for-prospective-dapp-developers-15d515383b23" 
+              href="https://dappdaily.com/ethereum-reading-list-for-prospective-dapp-developers-15d515383b23" 
               target="_blank" 
               rel="noopener noreferrer">Ethereum reading list for prospective ÐApp developers</a></li>
           </ul>

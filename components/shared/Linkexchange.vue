@@ -5,7 +5,7 @@
       :recipient-address="recipientAddress"
       :whitelist="whitelist"
       :till-date="tillDate"
-      api-url="http://api.userfeeds.io"
+      api-url="https://api.userfeeds.io"
       size="rectangle"
       type="text"
       asset="ethereum"
@@ -15,7 +15,7 @@
       contact-method="support@stateofthedapps.com"
       open-details="tab"
       algorithm="links"/>
-    <script src="http://cdn.jsdelivr.net/npm/@linkexchange/widgets@stable"/>
+    <script src="https://cdn.jsdelivr.net/npm/@linkexchange/widgets@stable"/>
   </div>
 </template>
 
