@@ -33,7 +33,7 @@
       </li>
       <li class="nav-item">
         <a
-          href="https://play.google.com/store/apps/details?id=com.stateofthedapps.android&ref=StateOfTheDapps"
+          href="http://play.google.com/store/apps/details?id=com.stateofthedapps.android&ref=StateOfTheDapps"
           class="nav-link"
           target="_blank"
           @click="trackFooterAppAndroid()">Get the Android app</a>
@@ -47,7 +47,7 @@
       <ul class="social-list">
         <li class="social-item">
           <a 
-            href="https://twitter.com/StateOfTheDApps" 
+            href="http://twitter.com/StateOfTheDApps" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -58,7 +58,7 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://github.com/state-of-the-dapps" 
+            href="http://github.com/state-of-the-dapps" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -69,7 +69,7 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://reddit.com/r/StateOfTheDApps" 
+            href="http://reddit.com/r/StateOfTheDApps" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -80,7 +80,7 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://blog.stateofthedapps.com/" 
+            href="http://blog.stateofthedapps.com/" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -91,7 +91,7 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://t.me/stateofthedapps" 
+            href="http://t.me/stateofthedapps" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -102,7 +102,7 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://get.status.im/chat/public/stateofthedapps-com" 
+            href="http://get.status.im/chat/public/stateofthedapps-com" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -125,7 +125,7 @@
       <li class="attribution-item">
         <span>Designed by <a 
           class="attribution-link" 
-          href="https://www.theduo.io" 
+          href="http://www.theduo.io" 
           target="_blank" 
           rel="noopener noreferrer" 
           @click="$mixpanel.track('SotD - Designer website')">Duo</a></span>

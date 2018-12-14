@@ -57,21 +57,21 @@ export default {
       let addressLink = ''
       if (this.platform === 'Ethereum') {
         addressLink =
-          'https://' +
+          'http://' +
           (this.network === 'mainnet' ? '' : this.network + '.') +
           'etherscan.io/address/' +
           this.address +
           '?utm_source=StateOfTheDApps'
       } else if (this.platform === 'POA') {
         addressLink =
-          'https://blockscout.com/poa/' +
+          'http://blockscout.com/poa/' +
           (this.network === 'mainnet' ? 'core' : 'sokol') +
           '/address/' +
           this.address +
           '?utm_source=StateOfTheDApps'
       } else if (this.platform === 'EOS') {
         addressLink =
-          'https://www.myeoskit.com/account/' +
+          'http://www.myeoskit.com/account/' +
           this.address +
           '?utm_source=StateOfTheDApps'
       }

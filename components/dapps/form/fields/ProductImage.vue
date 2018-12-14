@@ -8,7 +8,7 @@
         @uploadSuccess="setProductImage"/>
     </div>
     <p class="help">Dimensions must be 1200px width by 630px height <br>(JPEG format) <br><a 
-      href="https://cdn.stateofthedapps.com/image_guidelines_08152018.png"
+      href="http://cdn.stateofthedapps.com/image_guidelines_08152018.png"
       target="_blank">View the guidelines/examples</a></p>
   </div>
 </template>

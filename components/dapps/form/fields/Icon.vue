@@ -8,7 +8,7 @@
         @uploadSuccess="setIcon"/>
     </div>
     <p class="help">Dimensions must be 192px width by 192px height <br>(JPEG or PNG format) <br><a 
-      href="https://cdn.stateofthedapps.com/image_guidelines_08152018.png"
+      href="http://cdn.stateofthedapps.com/image_guidelines_08152018.png"
       target="_blank">View the guidelines/examples</a></p>
   </div>
 </template>

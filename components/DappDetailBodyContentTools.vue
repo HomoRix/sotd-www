@@ -125,7 +125,7 @@ export default {
         mpData: {},
         props: {
           dapp: this.name,
-          path: `https://www.stateofthedapps.com${this.$route.path}`
+          path: `http://www.stateofthedapps.com${this.$route.path}`
         }
       }
       this.$store.dispatch('setSiteModal', modal)

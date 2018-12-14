@@ -11,14 +11,14 @@
         <h5 class="title-5">Metamask for Ethereum and POA</h5>
         <p class="description">Metamask lets you use Ethereum and POA ÐApps within your browser. <a 
           class="link" 
-          href="https://metamask.io/?ref=StateOfTheDApps" 
+          href="http://metamask.io/?ref=StateOfTheDApps" 
           target="_blank" 
           rel="noopener noreferrer" 
           @click="trackMetamaskCta()">Try it now</a></p>
       </div>
       <div class="cta-wrapper">
         <a 
-          href="https://metamask.io/?ref=StateOfTheDApps" 
+          href="http://metamask.io/?ref=StateOfTheDApps" 
           class="cta" 
           target="_blank" 
           rel="noopener noreferrer" 
