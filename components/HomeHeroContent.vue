@@ -1,6 +1,6 @@
 <template>
   <div class="component-HomeHeroContent">
-    <HomeHeroContentIcons/>
+    <!-- <HomeHeroContentIcons/> -->
     <HomeHeroContentIntro/>
   </div>
 </template>
