@@ -100,6 +100,8 @@ export default {
     uploadSuccess(file, response) {
       console.log('file:' + JSON.stringify(file))
       console.log('response:' + JSON.stringify(response))
+      // Added by LvQS
+      this.disabled = true
       this.$emit('uploadSuccess', response)
     }
     // s3UploadError(errorMessage) {
