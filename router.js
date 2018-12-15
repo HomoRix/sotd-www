@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// Added By LvQS: Used for debug
-Vue.config.devtools = true;
 
 Vue.use(Router)
 
@@ -82,7 +80,7 @@ const scrollBehavior = function(to, from, savedPosition) {
           }
         } catch (e) {
           console.warn(
-            'Failed to save scroll position. Please add CSS.escape() polyfill (http://github.com/mathiasbynens/CSS.escape).'
+            'Failed to save scroll position. Please add CSS.escape() polyfill (https://github.com/mathiasbynens/CSS.escape).'
           )
         }
       }

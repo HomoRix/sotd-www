@@ -70,7 +70,7 @@ export default {
       //   withCredentials: false
       // },
       options: {
-        url: process.env.apiUrl + '/upload', // 'http://httpbin.org/anything', // 'http://localhost:8080/dapp-store/api/dappStore/upload',
+        url: 'http://localhost:8080/dapp-store/api/dappStore/upload', // 'http://httpbin.org/anything', // 'http://localhost:8080/dapp-store/api/dappStore/upload',
         autoProcessQueue: true,
         dictDefaultMessage: this.message,
         resizeWidth: this.resizeWidth,
