@@ -24,14 +24,14 @@ export default {
   methods: {
     setIcon(reponse) {
       const field = {
-        name: 'icon',
+        name: 'iconUrl',
         value: reponse.url || ''
       }
       this.$store.dispatch('dapps/form/setField', field)
     },
     removeIcon() {
       const field = {
-        name: 'icon',
+        name: 'iconUrl',
         value: ''
       }
       this.$store.dispatch('dapps/form/setField', field)

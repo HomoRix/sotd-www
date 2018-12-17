@@ -24,18 +24,18 @@ export default {
   methods: {
     setLogo(response) {
       const field = {
-        name: 'logo',
+        name: 'logoUrl',
         value: response.url || ''
       }
       this.$store.dispatch('dapps/form/setField', field)
     },
     removeLogo(response) {
       const field = {
-        name: 'logo',
+        name: 'logoUrl',
         value: ''
       }
       this.$store.dispatch('dapps/form/setField', field)
-    },
+    }
   }
 }
 </script>

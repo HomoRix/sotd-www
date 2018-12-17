@@ -57,9 +57,9 @@ function initialState() {
         rinkeby: { address: '' }
       },
       email: '',
-      icon: '',
+      iconUrl: '',
       license: '',
-      logo: '',
+      logoUrl: '',
       name: '',
       platform: dappDefaultPlatform,
       productImage: '',
@@ -354,8 +354,8 @@ const getters = {
   fields: state => {
     return state.fields
   },
-  icon: state => {
-    return state.fields.icon
+  iconUrl: state => {
+    return state.fields.iconUrl
   },
   iconErrors: state => {
     return state.errors.icon
@@ -372,8 +372,8 @@ const getters = {
   licenseErrors: state => {
     return state.errors.license
   },
-  logo: state => {
-    return state.fields.logo
+  logoUrl: state => {
+    return state.fields.logoUrl
   },
   logoErrors: state => {
     return state.errors.logo
