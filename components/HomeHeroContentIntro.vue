@@ -56,6 +56,7 @@ export default {
   position: relative;
   z-index: 20;
   opacity: 0;
+  margin: 0 auto;
   &.-first-load {
     animation: fadeInHomeHero 1s linear both;
     animation-delay: 1s;
