@@ -136,21 +136,24 @@
     </ul>
     <ul class="attribution-list">
       <li class="attribution-item">
+        <!-- <img 
+          class="attribution-logo" 
+          src="~/assets/images/logo-reverse.png"> -->
         <img 
           class="attribution-logo" 
-          src="~/assets/images/logo-reverse.png">
+          src="~/assets/images/Block-Wonder-Land.jpeg">
       </li>
       <li class="attribution-item">
-        <span>Copyright &copy; {{ Date.now() | formatDate('YYYY') }} State of the ÐApps</span>
+        <span>Copyright &copy; {{ Date.now() | formatDate('YYYY') }} State of the CMT ÐApps</span>
       </li>
-      <li class="attribution-item">
+      <!-- <li class="attribution-item">
         <span>Designed by <a 
           class="attribution-link" 
           href="https://www.theduo.io" 
           target="_blank" 
           rel="noopener noreferrer" 
           @click="$mixpanel.track('SotD - Designer website')">Duo</a></span>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>

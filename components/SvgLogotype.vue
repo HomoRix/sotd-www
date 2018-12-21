@@ -1,5 +1,59 @@
 <template>
-  <svg 
+  <svg
+    width="240px"
+    height="40px"
+    x="0px"
+    y="0px"
+    viewBox="0 0 1100 200"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd"
+      font-family="ArialNarrow-Bold, Arial Narrow"
+      font-weight="bold">
+      <text
+        id="STATE"
+        font-size="144"
+        fill="#2D70A1">
+        <tspan
+          x="-4"
+          y="105">STATE</tspan>
+      </text>
+      <text
+        id="CMTDAPPS"
+        font-size="144"
+        fill="#2D70A1">
+        <tspan
+          x="446"
+          y="105">CMTDAPPS</tspan>
+      </text>
+      <text
+        id="OF"
+        font-size="24"
+        fill="#2D70A1">
+        <tspan
+          x="393"
+          y="46">OF</tspan>
+      </text>
+      <text
+        id="THE"
+        font-size="24"
+        fill="#2D70A1">
+        <tspan
+          x="393"
+          y="75">THE</tspan>
+      </text>
+    </g>
+  </svg>
+  <!-- <svg 
     :width="width" 
     :height="height" 
     class="component-SvgLogotype" 
@@ -35,7 +89,7 @@
 		c32.2,0,40.6,10.2,40.6,45.5v47.4h-38.3V50.4c0-8.7-1.1-11.8-8-11.8h-2.3c-6.8,0-7.9,3-7.9,11v21.3c0,19,5,26.1,23.8,46.2
 		c23.5,25.4,32.6,38.3,32.6,72.8v33.8c0,35.2-8.4,45.5-40.6,45.5h-15.9c-32.2,0-40.6-10.2-40.6-45.5v-58h38.3v53.1
 		c0,8.7,0.7,11.8,7.9,11.8h2.3c6.8,0,7.6-3,7.6-11.8L1239,188.3L1239,188.3z"/>
-  </svg>
+  </svg> -->
 </template>
 
 <script>

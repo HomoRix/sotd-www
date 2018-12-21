@@ -16,10 +16,12 @@
         :to="{ name: 'home' }" 
         class="logo-link -wordmark" 
         @click.native="trackMenu('logo')">
-        <SvgLogotype 
+        <!-- <SvgLogotype 
           :fill="color" 
           :width="120" 
-          :height="26" />
+          :height="26" /> -->
+        <SvgLogotype 
+          :fill="color" />
       </nuxt-link>
     </div>
     <ul 
@@ -69,10 +71,19 @@
           </li>
         </media>
       </template>
-    <!-- <li class="nav-item -newsletter" :class="'-' + color" @click="scrollToMailingList('subscribe')">
-      <SvgIconMail class="nav-icon -newsletter" :fill="color" :width="18" :height="18" /> 
-      <span class="nav-link -newsletter" :class="'-' + color" >Stay in the loop</span>
-    </li> -->
+      <li
+        :class="'-' + color"
+        class="nav-item -newsletter" 
+        @click="scrollToMailingList('subscribe')">
+        <SvgIconMail
+          :fill="color"
+          :width="18"
+          :height="18"
+          class="nav-icon -newsletter"/> 
+        <span
+          :class="'-' + color"
+          class="nav-link -newsletter">Stay in the loop</span>
+      </li>
     </ul>
     <template v-if="this.$route.name != 'dapps' && this.$route.name != 'dapps-tab' && this.$route.name != 'dapps-tags' && this.$route.name != 'dapps-tab-tags'">
       <media :query="{minWidth: 975}">

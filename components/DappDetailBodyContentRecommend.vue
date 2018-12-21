@@ -48,6 +48,7 @@ import { trackDappFeedback } from '~/helpers/mixpanel'
 import SvgReactionNegative from './SvgReactionNegative'
 import SvgReactionNeutral from './SvgReactionNeutral'
 import SvgReactionPositive from './SvgReactionPositive'
+import axios from '~/helpers/axios'
 
 export default {
   components: {
@@ -93,9 +94,20 @@ export default {
       this.$mixpanel.track(action.name, action.data)
       this.hasSubmitted = true
       this.currentReaction = feedback
-      setTimeout(() => {
-        this.hasSubmitted = false
-      }, 3000)
+      axios
+        .get('dapps/' + this.slug + '/feedback', {
+          params: {
+            attitude: feedback
+          }
+        })
+        .then(response => {
+          setTimeout(() => {
+            this.hasSubmitted = false
+          }, 3000)
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
   }
 }
