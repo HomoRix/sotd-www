@@ -21,7 +21,7 @@
         </div>
       </div>
       <div 
-        v-if="dapp.stats && dapp.stats.dev_30d" 
+        v-if="dapp.stats && dapp.stats.dev_30d !== undefined" 
         class="module-wrapper -tier-3">
         <div class="module">
           <DappDetailBodyContentModulesDev
@@ -35,7 +35,7 @@
         v-if="stats" 
         class="module-wrapper -tier-4">
         <div 
-          v-if="dapp.stats.mau && dapp.sparklines" 
+          v-if="dapp.stats.mau !== undefined && dapp.sparklines" 
           class="module -dev">
           <DappDetailBodyContentModulesStats 
             :daily="dapp.stats.dau"
@@ -46,7 +46,7 @@
             title="Active users"/>
         </div>
         <div 
-          v-if="dapp.stats.tx_30d && dapp.sparklines" 
+          v-if="dapp.stats.tx_30d !== undefined && dapp.sparklines" 
           class="module">
           <DappDetailBodyContentModulesStats 
             :daily="dapp.stats.tx_1d"
