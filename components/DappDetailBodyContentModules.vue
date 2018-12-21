@@ -58,10 +58,10 @@
             type="numbers"/>
         </div>
         <div 
-          v-if="dapp.stats.value_30d || dapp.stats.poa_value_30d || dapp.stats.eos_value_30d" 
+          v-if="dapp.stats.value_30d !== undefined || dapp.stats.poa_value_30d !== undefined || dapp.stats.eos_value_30d !== undefined || dapp.stats.cmt_value_30d !== undefined" 
           class="module">
           <DappDetailBodyContentModulesStats
-            v-if="dapp.stats.value_30d" 
+            v-if="dapp.stats.value_30d !== undefined" 
             :daily="dapp.stats.value_1d"
             :monthly="dapp.stats.value_30d"
             :sparkline="dapp.sparklines.value"
@@ -71,7 +71,7 @@
             type="numbers"/>
           <br v-if="dapp.stats.value_30d && dapp.stats.poa_value_30d">
           <DappDetailBodyContentModulesStats
-            v-if="dapp.stats.poa_value_30d" 
+            v-if="dapp.stats.poa_value_30d !== undefined" 
             :daily="dapp.stats.poa_value_1d"
             :monthly="dapp.stats.poa_value_30d"
             :sparkline="dapp.sparklines.poa_value"
@@ -80,13 +80,22 @@
             title="Volume (POA)"
             type="numbers"/>
           <DappDetailBodyContentModulesStats
-            v-if="dapp.stats.eos_value_30d"
+            v-if="dapp.stats.eos_value_30d !== undefined"
             :daily="dapp.stats.eos_value_1d"
             :monthly="dapp.stats.eos_value_30d"
             :sparkline="dapp.sparklines.eos_value"
             :quarterly="dapp.stats.eos_value_90d"
             :weekly="dapp.stats.eos_value_7d"
             title="Volume (EOS)"
+            type="numbers"/>
+          <DappDetailBodyContentModulesStats
+            v-if="dapp.stats.cmt_value_30d !== undefined"
+            :daily="dapp.stats.cmt_value_1d"
+            :monthly="dapp.stats.cmt_value_30d"
+            :sparkline="dapp.sparklines.cmt_value"
+            :quarterly="dapp.stats.cmt_value_90d"
+            :weekly="dapp.stats.cmt_value_7d"
+            title="Volume (CMT)"
             type="numbers"/>
         </div>
       </div>

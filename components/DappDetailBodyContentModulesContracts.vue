@@ -38,18 +38,6 @@
         platform="POA"
         network="Sokol Testnet"/>
       <DappDetailBodyContentModulesContractsItem
-        v-if="cmtMainnet && cmtMainnet.length"
-        :addresses="cmtMainnet"
-        :slug="slug"
-        platform="CMT"
-        network="mainnet"/>
-      <DappDetailBodyContentModulesContractsItem
-        v-if="cmtTestnet && cmtTestnet.length"
-        :addresses="cmtTestnet"
-        :slug="slug"
-        platform="CMT"
-        network="Testnet"/>
-      <DappDetailBodyContentModulesContractsItem
         v-if="eosMainnet.length"
         :addresses="eosMainnet"
         :slug="slug"
