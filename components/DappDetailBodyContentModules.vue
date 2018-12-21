@@ -14,9 +14,10 @@
       </div>
       <div class="module-wrapper -tier-2">
         <div class="module">
-          <DappDetailBodyContentModulesSubmitted :submitted="dapp.created || dapp.createDate"/>
+          <DappDetailBodyContentModulesSubmitted :submitted="dapp.created || dapp.createDate || ''"/>
         </div>
         <div class="module">
+          <DappDetailBodyContentModulesUpdated :updated="dapp.lastUpdated || dapp.modifyDate || ''"/>
         </div>
       </div>
       <div 
@@ -34,7 +35,7 @@
         v-if="stats" 
         class="module-wrapper -tier-4">
         <div 
-          v-if="dapp.stats.mau" 
+          v-if="dapp.stats.mau && dapp.sparklines" 
           class="module -dev">
           <DappDetailBodyContentModulesStats 
             :daily="dapp.stats.dau"
@@ -45,7 +46,7 @@
             title="Active users"/>
         </div>
         <div 
-          v-if="dapp.stats.tx_30d" 
+          v-if="dapp.stats.tx_30d && dapp.sparklines" 
           class="module">
           <DappDetailBodyContentModulesStats 
             :daily="dapp.stats.tx_1d"
