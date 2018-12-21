@@ -7,12 +7,12 @@
           class="nav-link" 
           @click="trackContact()">Contact us</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <nuxt-link 
           to="/about" 
           class="nav-link" 
           @click.native="trackPageAbout()">About</nuxt-link>
-      </li>
+      </li> -->
       <li class="nav-item">
         <nuxt-link 
           :to="{ name: 'dapps-new' }" 
@@ -25,18 +25,39 @@
           class="nav-link" 
           @click.native="trackPromotedDappsView()">Promote your ÐApp</nuxt-link>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <nuxt-link 
           :to="{ name: 'logos' }" 
           class="nav-link" 
           @click.native="trackFooterLogoDownload()">Download our logo</nuxt-link>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <a
           href="https://play.google.com/store/apps/details?id=com.stateofthedapps.android&ref=StateOfTheDapps"
           class="nav-link"
           target="_blank"
           @click="trackFooterAppAndroid()">Get the Android app</a>
+      </li> -->
+      <li class="nav-item">
+        <a
+          href="https://www.cmttracking.io/?ref=StateOfTheCMTDapps"
+          class="nav-link"
+          target="_blank"
+          @click="trackFooterAppAndroid()">CyberMiles Block Explorer</a>
+      </li>
+      <li class="nav-item">
+        <a
+          href="https://www.cybermiles.io/?ref=StateOfTheCMTDapps"
+          class="nav-link"
+          target="_blank"
+          @click="trackFooterAppAndroid()">HomePage for CMT</a>
+      </li>
+      <li class="nav-item">
+        <a
+          href="https://www.cybermiles.io/en-us/blockchain-infrastructure/cmt-wallet/?ref=StateOfTheCMTDapps"
+          class="nav-link"
+          target="_blank"
+          @click="trackFooterAppAndroid()">CMT Wallet</a>
       </li>
       <li class="nav-item">
         <nuxt-link 
