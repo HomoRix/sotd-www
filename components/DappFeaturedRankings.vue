@@ -53,17 +53,23 @@ export default {
     }
   },
   mounted() {
-    axios.get('categories').then(response => {
-      const items = response.data.items
-      const categoryNum = 4
-      let categories = []
-      for (let i = 0; i < categoryNum; i++) {
-        let randomItemIndex = Math.floor(Math.random() * items.length)
-        let category = items.splice(randomItemIndex, 1)
-        categories = categories.concat(category)
-      }
-      this.categories = categories
-    })
+    axios
+      .get('categories', {
+        params: {
+          containEmpty: false
+        }
+      })
+      .then(response => {
+        const items = response.data.items
+        const categoryNum = 4
+        let categories = []
+        for (let i = 0; i < categoryNum; i++) {
+          let randomItemIndex = Math.floor(Math.random() * items.length)
+          let category = items.splice(randomItemIndex, 1)
+          categories = categories.concat(category)
+        }
+        this.categories = categories
+      })
   },
   methods: {
     trackDappRankingCategory(category) {
