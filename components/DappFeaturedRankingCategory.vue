@@ -77,8 +77,6 @@ export default {
       .then(response => {
         const dapps = response.data.items
         this.dapps = dapps
-
-        console.log('dapp:' + JSON.stringify(response))
       })
   },
   methods: {
