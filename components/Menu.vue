@@ -71,7 +71,7 @@
           </li>
         </media>
       </template>
-      <li
+      <!-- <li
         :class="'-' + color"
         class="nav-item -newsletter" 
         @click="scrollToMailingList('subscribe')">
@@ -83,7 +83,7 @@
         <span
           :class="'-' + color"
           class="nav-link -newsletter">Stay in the loop</span>
-      </li>
+      </li> -->
     </ul>
     <template v-if="this.$route.name != 'dapps' && this.$route.name != 'dapps-tab' && this.$route.name != 'dapps-tags' && this.$route.name != 'dapps-tab-tags'">
       <media :query="{minWidth: 975}">

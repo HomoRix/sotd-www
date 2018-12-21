@@ -1,7 +1,7 @@
 <template>
   <div class="component-SecondaryCta">
-    <!-- <SecondaryCtaMailingList/>
-    <SecondaryCtaMetamask/>
+    <!-- <SecondaryCtaMailingList/> -->
+    <!-- <SecondaryCtaMetamask/>
     <SecondaryCtaScatter/> -->
     <SecondaryCtaCMTMetamask/>
   </div>
