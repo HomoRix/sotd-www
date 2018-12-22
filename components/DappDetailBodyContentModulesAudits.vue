@@ -7,7 +7,7 @@
         :key="index"
         class="audit-item">
         <a
-          :href="audit.learn_more_url + '?utm_source=StateOfTheDApps'"
+          :href="audit.learn_more_url + '?utm_source=StateOfTheCMTDApps'"
           class="audit-link"
           target="_blank"
           @click="trackDappContractAudit(audit.address, slug, audit.auditor_name, audit.learn_more_url)">

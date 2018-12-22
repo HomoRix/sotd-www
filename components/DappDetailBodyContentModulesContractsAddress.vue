@@ -61,19 +61,19 @@ export default {
           (this.network === 'mainnet' ? '' : this.network + '.') +
           'etherscan.io/address/' +
           this.address +
-          '?utm_source=StateOfTheDApps'
+          '?utm_source=StateOfTheCMTDApps'
       } else if (this.platform === 'POA') {
         addressLink =
           'https://blockscout.com/poa/' +
           (this.network === 'mainnet' ? 'core' : 'sokol') +
           '/address/' +
           this.address +
-          '?utm_source=StateOfTheDApps'
+          '?utm_source=StateOfTheCMTDApps'
       } else if (this.platform === 'EOS') {
         addressLink =
           'https://www.myeoskit.com/account/' +
           this.address +
-          '?utm_source=StateOfTheDApps'
+          '?utm_source=StateOfTheCMTDApps'
       }
       return addressLink
     }

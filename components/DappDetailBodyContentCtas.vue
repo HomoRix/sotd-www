@@ -99,7 +99,7 @@ export default {
   methods: {
     refString(url) {
       let refString = url.includes('?') ? '&' : '?'
-      refString += 'utm_source=StateOfTheDApps'
+      refString += 'utm_source=StateOfTheCMTDApps'
       return refString
     },
     svgSocialComponent(platform) {

@@ -218,20 +218,20 @@ const platformMap = {
 const platformSoftware = {
   CMT: {
     name: 'Metamask4CMT',
-    url: 'https://www.cybermiles.io/metamask/?ref=StateOfTheDApps'
+    url: 'https://www.cybermiles.io/metamask/?ref=StateOfTheCMTDApps'
   },
   Ethereum: {
     name: 'Metamask',
-    url: 'https://metamask.io/?utm_source=StateOfTheDApps'
+    url: 'https://metamask.io/?utm_source=StateOfTheCMTDApps'
   },
   EOS: {
     name: 'Scatter',
-    url: 'https://get-scatter.com/?utm_source=StateOfTheDApps'
+    url: 'https://get-scatter.com/?utm_source=StateOfTheCMTDApps'
   },
   POA: {
     name: 'Nifty',
     url:
-      'https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?utm_source=StateOfTheDApps'
+      'https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?utm_source=StateOfTheCMTDApps'
   }
 }
 
