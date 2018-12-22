@@ -68,7 +68,7 @@
       <ul class="social-list">
         <li class="social-item">
           <a 
-            href="https://twitter.com/StateOfTheDApps" 
+            href="https://twitter.com/cybermiles" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -79,7 +79,18 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://github.com/state-of-the-dapps" 
+            href="https://www.facebook.com/cybermiles" 
+            class="social-link" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            @click="trackSocial('Facebook')"><img 
+              src="~/assets/images/social/facebook-reverse.png" 
+              alt="Facebook" 
+              class="social-icon"></a>
+        </li>
+        <li class="social-item">
+          <a 
+            href="https://github.com/cybermiles" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -88,7 +99,7 @@
               alt="Github" 
               class="social-icon"></a>
         </li>
-        <li class="social-item">
+        <!-- <li class="social-item">
           <a 
             href="https://reddit.com/r/StateOfTheDApps" 
             class="social-link" 
@@ -98,10 +109,10 @@
               src="~/assets/images/social/reddit-reverse.png" 
               alt="Reddit" 
               class="social-icon"></a>
-        </li>
+        </li> -->
         <li class="social-item">
           <a 
-            href="https://blog.stateofthedapps.com/" 
+            href="https://medium.com/cybermiles/" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -112,7 +123,7 @@
         </li>
         <li class="social-item">
           <a 
-            href="https://t.me/stateofthedapps" 
+            href="https://t.me/cybermilestoken" 
             class="social-link" 
             target="_blank" 
             rel="noopener noreferrer" 
@@ -121,7 +132,7 @@
               alt="Telegram" 
               class="social-icon"></a>
         </li>
-        <li class="social-item">
+        <!-- <li class="social-item">
           <a 
             href="https://get.status.im/chat/public/stateofthedapps-com" 
             class="social-link" 
@@ -131,7 +142,7 @@
               src="~/assets/images/social/status-reverse.png" 
               alt="Status" 
               class="social-icon"></a>
-        </li>
+        </li> -->
       </ul>
     </ul>
     <ul class="attribution-list">
