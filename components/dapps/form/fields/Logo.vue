@@ -9,7 +9,7 @@
         @removeFile="removeLogo"/>
     </div>
     <p class="help">Dimensions must be 400px width by 200-400px height <br>(JPEG or PNG format) <br><a 
-      href="https://cdn.stateofthedapps.com/image_guidelines_08152018.png"
+      href="https://cm-dapp-store.oss-cn-beijing.aliyuncs.com/common/image_guidelines_08152018.png"
       target="_blank">View the guidelines/examples</a></p>
   </div>
 </template>
