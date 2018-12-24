@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs'
 
 const env = {
-  apiUrl: process.env.API_URL || 'http://prod.cmtdapps.com:8080/api/dappStore/' || 'https://api.stateofthedapps.com/',
+  apiUrl: process.env.API_URL || 'http://prod.cmtdapps.com:8080/api/dappStore/', // 'http://localhost:8080/api/dappStore/', // 'https://api.stateofthedapps.com/',
   cdnPublicPath: process.env.CDN_PUBLIC_PATH || '/_nuxt/',
   googleAnalytics: process.env.GOOGLE_ANALYTICS || 'UA-000000-1',
   fullstory: process.env.FULLSTORY,
@@ -66,7 +66,8 @@ export default {
     mixpanel: env.mixpanel
   },
   head: {
-    title: 'State of the ÐApps — Projects Built on Ethereum, EOS & POA',
+    // title: 'State of the ÐApps — Projects Built on Ethereum, EOS & POA',
+    title: 'State of the ÐApps — Projects Built on CyberMiles',
     meta: [
       { charset: 'utf-8' },
       {
