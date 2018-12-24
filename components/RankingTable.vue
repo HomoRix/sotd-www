@@ -30,11 +30,11 @@
                 <RankingTableVolumeHead :sort="true"/>
               </div>
             </media>
-            <media :query="{minWidth: tweakpoint}">
+            <!-- <media :query="{minWidth: tweakpoint}">
               <div class="table-head col-dev">
                 <RankingTableDevHead :sort="true"/>
               </div>
-            </media>
+            </media> -->
             <media :query="{minWidth: tweakpoint}">
               <div class="table-head col-usage">
                 <RankingTableUsageHead/>
@@ -98,14 +98,14 @@
                     :platform="dapp.platform"/>
                 </div>
               </media>
-              <media :query="{minWidth: tweakpoint}">
+              <!-- <media :query="{minWidth: tweakpoint}">
                 <div class="table-data col-dev">
                   <RankingTableValuePct
                     v-if="dapp.stats"
                     :value="dapp.stats.dev_30d"
                     :value_pct="dapp.stats.dev_30d_pct"/> 
                 </div>
-              </media>
+              </media> -->
               <media :query="{minWidth: tweakpoint}">
                 <div class="table-data col-usage">
                   <RankingTableTrend
