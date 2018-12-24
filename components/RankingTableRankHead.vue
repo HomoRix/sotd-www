@@ -8,13 +8,13 @@
       @click.native="trackRankingSort('rank')">#</nuxt-link>
     <span 
       v-else 
-      class="label">#</span>
-    <!-- <Help
+      class="label">#(ID)</span>
+      <!-- <Help
       :bottom="true"
       text="Rank is based on multiple factors including active users (unique source addresses in transactions to ÐApp contracts), transaction volume, developer activity, profile freshness and strength, CTRs, and user recommendations"/> -->
-    <Help
+      <!-- <Help
       :bottom="true"
-      text="Rank is based on multiple factors including active users (unique source addresses in transactions to ÐApp contracts), transaction volume, CTRs, and user recommendations"/>
+      text="Rank is based on multiple factors including active users (unique source addresses in transactions to ÐApp contracts), transaction volume, CTRs, and user recommendations"/> -->
   </div>
 </template>
 

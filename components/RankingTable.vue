@@ -5,7 +5,8 @@
         <div class="table-header">
           <div class="table-row">
             <div class="table-head col-rank">
-              <RankingTableRankHead :sort="true"/>
+              <!-- <RankingTableRankHead :sort="true"/> -->
+              <RankingTableRankHead :sort="false"/>
             </div>
             <div class="table-head col-name">
               <RankingTableNameHead/>
@@ -22,12 +23,14 @@
             </media>
             <media :query="{minWidth: tweakpoint}">
               <div class="table-head col-dau">
-                <RankingTableDauHead :sort="true"/>
+                <!-- <RankingTableDauHead :sort="true"/> -->
+                <RankingTableDauHead :sort="false"/>
               </div>
             </media>
             <media :query="{minWidth: tweakpoint}">
               <div class="table-head col-vol">
-                <RankingTableVolumeHead :sort="true"/>
+                <!-- <RankingTableVolumeHead :sort="true"/> -->
+                <RankingTableVolumeHead :sort="false"/>
               </div>
             </media>
             <!-- <media :query="{minWidth: tweakpoint}">
@@ -61,7 +64,8 @@
               :key="index"
               class="table-row">
               <div class="table-data col-rank">
-                <RankingTableRank :rank="dapp.rank"/>
+                <!-- <RankingTableRank :rank="dapp.rank"/> -->
+                <RankingTableRank :rank="dapp.id"/>
               </div>
               <div class="table-data col-name">
                 <RankingTableName
