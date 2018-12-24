@@ -82,6 +82,10 @@ export default {
       }
       const warningWords = ['.']
       validationTimer = setTimeout(() => {
+        escape(this.name).indexOf('%u') > -1
+          ? errors.data.push(`
+          Name can't be any characters other than English characters`)
+          : ''
         this.name.length > 25
           ? errors.data.push(`Name can't be longer than 25 characters`)
           : ''
