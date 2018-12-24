@@ -81,7 +81,8 @@ export default {
       title:
         'State of the ÐApps — ' +
         this.statDappCount.toLocaleString() +
-        ' Projects Built on Ethereum, EOS & POA'
+        // ' Projects Built on Ethereum, EOS & POA'
+        ' Projects Built on CyberMiles'
     }
   }
 }

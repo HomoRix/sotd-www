@@ -82,7 +82,8 @@ export default {
   head() {
     return {
       title:
-        'State of the ÐApps — Ranking the Best ÐApps of Ethereum, EOS, and POA'
+        // 'State of the ÐApps — Ranking the Best ÐApps of Ethereum, EOS, and POA'
+        'State of the ÐApps — Ranking the Best ÐApps of CyberMiles'
     }
   },
   scrollToTop: true
