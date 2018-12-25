@@ -85,7 +85,7 @@
         </tbody>
       </table>
     </div>
-    <h2 class="heading-2">Platforms</h2>
+    <!-- <h2 class="heading-2">Platforms</h2>
     <div class="table-wrapper">
       <table class="table">
         <thead class="table-headings">
@@ -134,7 +134,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
     <h2 class="heading-2">Status</h2>
     <div class="chart-wrapper-bar">
       <StatsStatusBarChart
