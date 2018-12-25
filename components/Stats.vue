@@ -34,14 +34,14 @@
         </div>
       </li>
     </ul>
-    <h2 class="heading-2">New ÐApps per Month</h2>
+    <!-- <h2 class="heading-2">New ÐApps per Month</h2>
     <div class="new-vs-total-wrapper">
       <div class="new-vs-total-legend">
         <div class="new-vs-total-legend-new">New ÐApps</div>
         <div>Total ÐApps</div>
       </div>
       <canvas id="new-vs-total"/>
-    </div>
+    </div> -->
     <h2 class="heading-2">Categories</h2>
     <div class="table-wrapper">
       <table class="table">
@@ -300,7 +300,7 @@ export default {
     ])
   },
   mounted() {
-    this.createChart('new-vs-total', this.newVsTotalData)
+    // this.createChart('new-vs-total', this.newVsTotalData)
   },
   methods: {
     createChart(chartId, chartData) {
